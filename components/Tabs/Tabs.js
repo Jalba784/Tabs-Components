@@ -60,7 +60,7 @@ class TabItem {
     
     // Add a class named "tabs-item-selected" to this element
     //this.element;
-
+    this.element.classList.add('tabs-item-selected');
   }
 }
 
@@ -75,9 +75,9 @@ class TabItem {
 */
 
 // Selected the DOM elements
-links = document.querySelectorAll('.tabs-link');
+let links = document.querySelectorAll('.tabs-link');
 
 // Looping through New Class
 links.forEach(link => {
   return new TabLink(link);
-};
+});
